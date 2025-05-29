@@ -213,9 +213,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.target.rc \
     $(LOCAL_PATH)/init/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc
 
-PRODUCT_PACKAGES += \
-    ueventd.xiaomi.rc
-
 # IPA
 PRODUCT_PACKAGES += \
     ipacm \
@@ -281,9 +278,7 @@ PRODUCT_PACKAGES += \
     DeviceAsWebcamResCommon \
     SystemUIOverlayCommon \
     SettingsOverlayCommon \
-    TelephonyOverlayCommon \
-    EuiccGoogle \
-    FrameworksEuicc
+    TelephonyOverlayCommon
 
 # Partitions
 PRODUCT_PACKAGES += \
@@ -371,8 +366,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/android.hardware.telephony.mbms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.mbms.xml
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml
+# PRODUCT_COPY_FILES += \
+#     $(LOCAL_PATH)/configs/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml
     
 # Thermal
 PRODUCT_PACKAGES += \
