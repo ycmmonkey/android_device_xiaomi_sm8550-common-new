@@ -400,9 +400,6 @@ PRODUCT_PACKAGES += \
     vndservice \
     vndservicemanager
 
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
-
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
