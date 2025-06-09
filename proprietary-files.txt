@@ -538,6 +538,7 @@ vendor/lib64/libfastcvopt.so
 
 # Fingerprint
 vendor/etc/permissions/qti_fingerprint_interface.xml
+vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 vendor/etc/vintf/manifest/fod.xml
 
 # GNSS
