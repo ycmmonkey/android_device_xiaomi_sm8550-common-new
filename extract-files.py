@@ -103,7 +103,11 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed('libbase_shim.so'),
         'vendor/etc/ueventd.rc' : blob_fixup()
-        .add_line_if_missing('\n# Charger\n/sys/class/qcom-battery     input_suspend            0660    system  system')
+        .add_line_if_missing('\n# Charger\n/sys/class/qcom-battery     input_suspend            0660    system  system'),
+    (
+        'vendor/bin/init.kernel.post_boot-kalama.sh'
+    ): blob_fixup()
+        .regex_replace('echo 0-3 > /dev/cpuset/system-background/cpus', 'echo 0-2 > /dev/cpuset/system-background/cpus'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
