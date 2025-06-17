@@ -58,6 +58,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audioadsprpcd \
     android.hardware.audio.service \
+    audio.primary.kalama \
+    sound_trigger.primary.kalama \
     libagm_compress_plugin \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
@@ -65,12 +67,11 @@ PRODUCT_PACKAGES += \
     libaudiochargerlistener \
     libbatterylistener \
     libfmpal \
-    libats \
     libhfp_pal \
+    libsndcardparser \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
     libvolumelistener
 
 PRODUCT_COPY_FILES += \
